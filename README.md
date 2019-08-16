@@ -1,4 +1,4 @@
-# Angular 8 and Electron 6
+# Angular 8 and Electron 6 Todo App
 [![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0 and [Electron](https://electronjs.org/) version 6.0.2.
