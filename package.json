@@ -3,6 +3,7 @@
   "productName": "Angular Electron Todo App",
   "description": "A simple Todo app for Windows, Mac and Linux which is created through Electron 6 and Angular 8",
   "version": "1.0.0",
+  "homepage": "https://github.com/sathishkumar63/angular-electron-todo-app",
   "author": {
     "name": "Sathishkumar S",
     "email": "sathishjim@gmail.com"
@@ -11,6 +12,15 @@
     "type": "git",
     "url": "https://github.com/sathishkumar63/angular-electron-todo-app.git"
   },
+  "keywords": [
+    "Electron",
+    "Angular",
+    "angular",
+    "angular 8",
+    "electron",
+    "typescript",
+    "sass"
+  ],
   "main": "electron/dist/main.js",
   "scripts": {
     "ng": "ng",

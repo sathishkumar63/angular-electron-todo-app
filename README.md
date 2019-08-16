@@ -1,31 +1,63 @@
 # Angular 8 and Electron 6
+[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0 and [Electron](https://electronjs.org/) version 6.0.2.
 
-# Demo Link
-[Angular 8 Todo](https://angular-8-todo.firebaseapp.com/)
+# Before You Begin
 
-## Functionality
+If you are new to the angular world, electron world or both it's recommended to take a look at the documentation first.
 
-1.Add todos
-2.Edit todos by double-clicking
-3.Delete todos
-4.Check/Uncheck todos
-5.Filters for complete/active todos
-6.Counts how many todos are left
-7.Todos are saved to LocalStorage
+ * Angular - [Official Website](https://angular.io/).
+ * Electron - [Official Website](https://electronjs.org/).
 
-## Development server
+# Functionality
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Add todos
+* Edit todos by double-clicking
+* Delete todos
+* Check/Uncheck todos
+* Filters for complete/active todos
+* Counts how many todos are left
+* Todos are saved to LocalStorage
 
-## Code scaffolding
+# Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install `@angular/cli` globally.
 
-## Build
+```
+$ npm i -g @angular/cli
+```
+# How to Use?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Get clone from the repo.
+
+```
+$ git clone https://github.com/sathishkumar63/angular-electron-todo-app.git
+```
+
+Redirect to the repo folder.
+
+```
+$ cd angular-electron-todo-app
+```
+
+Install the dependencies.
+
+```
+$ npm install
+```
+
+## Build the app.
+
+```
+$ npm run build-electron
+```
+
+## And see it in action.
+
+```
+$ npm run start-electron
+```
 
 ## Running unit tests
 
@@ -35,10 +67,34 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Building MacOS, Windows and Linux package from the terminal
+
+MacOS
+
+```
+$ npm run package-mac
+```
+
+Windows
+
+```
+$ npm run package-win
+```
+
+Linux
+
+```
+$ npm run package-linux
+```
+
+# Deployment
+
+I don't want to stuck with specific packing tool, so it's up to you to choose one of the most used tools listed below.
+
+ * [electron-forge](https://github.com/electron-userland/electron-forge)
+ * [electron-builder](https://github.com/electron-userland/electron-builder)
+ * [electron-packager](https://github.com/electron-userland/electron-packager)
+
 ## Author
 
 * **[Sathishkumar63](https://github.com/sathishkumar63)** 
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
