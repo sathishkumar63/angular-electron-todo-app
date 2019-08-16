@@ -47,13 +47,13 @@ Install the dependencies.
 $ npm install
 ```
 
-## Build the app.
+# Build the app.
 
 ```
 $ npm run build-electron
 ```
 
-## And see it in action.
+# And see it in action.
 
 ```
 $ npm run start-electron
@@ -67,7 +67,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Building MacOS, Windows and Linux package from the terminal
+# Building MacOS, Windows and Linux package from the terminal
 
 MacOS
 
