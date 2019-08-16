@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 If you are new to the angular world, electron world or both it's recommended to take a look at the documentation first.
 
- * Angular - [Official Website](https://angular.io/).
+ * Angular - [Official Website](https://next.angular.io/).
  * Electron - [Official Website](https://electronjs.org/).
 
 # Functionality
