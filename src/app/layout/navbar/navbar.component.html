@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav left-sidebar shadow border-0" fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-nav-list>
+        <a mat-list-item [matTooltip]="!isExpanded ? 'Menu' : null" matTooltipPosition="right"
+        (click)="isExpanded = !isExpanded" [ngClass]="{'pl-4' : isExpanded}" class="d-none d-lg-block menu-text text-white h-auto mb-3">
+        <mat-icon mat-list-icon>menu</mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Menu</h4>
+      </a>
+      <ul [ngClass]="{'ml-4' : isExpanded}">
+        <li *ngFor="let menuItem of menus" class="nav-sidebar_dropdown mb-3" [ngClass]="{'active': menuItem.active }">
+          <a mat-list-item [matTooltip]="!isExpanded ? menuItem.heading : null" matTooltipPosition="right"
+            class="menu-text" [routerLink]="'./'+menuItem.link" routerLinkActive="active">
+            <mat-icon matListIcon>{{menuItem.icon}}</mat-icon>
+            <span *ngIf="isExpanded" class="pl-3">{{menuItem.heading}}</span>
+          </a>
+        </li>
+      </ul>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="mat-sidenav-content bg-white" [ngClass]="{'ml-md-6' : !isExpanded, 'ml-md-16' : isExpanded}">
+    <nav class="navbar navbar-light justify-content-start navbar-fixed w-100 shadow bg-white">
+      <button mat-icon-button aria-label="Side nav toggle icon-button" (click)="drawer.toggle(); isExpanded = true"
+        *ngIf="isHandset$ | async">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="d-flex justify-content-start align-items-center">
+        <img src="assets/icons/icon-72x72.png" alt="Angular logo" class="img-fluid ml-sm-5 logo-ht">
+      <span class="font-weight-bold ml-3">Angular 8 and Electron 6 Todo App</span>
+      </div>
+    </nav>
+    <div class="container custom-wrapper mb-5">
+        <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

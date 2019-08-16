@@ -1,6 +1,19 @@
-# AngularElectron
+# Angular 8 and Electron 6
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+
+# Demo Link
+[Angular 8 Todo](https://angular-8-todo.firebaseapp.com/)
+
+## Functionality
+
+1.Add todos
+2.Edit todos by double-clicking
+3.Delete todos
+4.Check/Uncheck todos
+5.Filters for complete/active todos
+6.Counts how many todos are left
+7.Todos are saved to LocalStorage
 
 ## Development server
 
@@ -21,6 +34,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Author
+
+* **[Sathishkumar63](https://github.com/sathishkumar63)** 
 
 ## Further help
 

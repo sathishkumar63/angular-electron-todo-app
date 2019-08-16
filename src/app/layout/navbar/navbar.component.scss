@@ -1,0 +1,85 @@
+.sidenav-container {
+  height: 100%;
+  position: inherit;
+
+  .sidenav {
+    width: auto;
+
+    &.left-sidebar {
+      box-shadow: 0 0 38.2px 7.8px rgba(0, 0, 0, 0.27);
+      background-image: linear-gradient(178deg, #353a5f, #1f2235);
+      transition: 0.2s ease-in;
+
+      .sidenav-logo {
+        background-image: linear-gradient(178deg, #353a5f, #1f2235);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          &:last-child {
+            border-bottom: none !important
+          }
+
+          a {
+            color: #fff;
+            height: 33px;
+
+            &.active {
+              background-color: #1e1e2e;
+              border-top-left-radius: 10rem;
+              border-bottom-left-radius: 10rem;
+
+              mat-icon {
+                color: #499bdd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mat-sidenav-content {
+    transition: margin-left ease .2s;
+
+    .navbar-fixed {
+      color: rgba(0, 0, 0, .87);
+      position: fixed;
+      z-index: 2;
+
+      .logo-ht {
+        height: 2rem;
+      }
+    }
+
+    .custom-wrapper {
+
+      // min-height: calc(100vh - 100px);
+      @media only screen and (min-width: 320px) and (max-width : 370px) {
+        margin-top: 50% !important;
+      }
+
+      @media only screen and (min-width: 375px) and (max-width: 426px) {
+        margin-top: 30% !important;
+      }
+
+      margin-top: 10%;
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .ml-md-6 {
+    margin-left: 4rem !important;
+  }
+
+  .ml-md-16 {
+    margin-left: 11.4rem !important;
+  }
+}

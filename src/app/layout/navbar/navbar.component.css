@@ -1,0 +1,82 @@
+.sidenav-container {
+  height: 100%;
+  position: inherit;
+}
+
+.sidenav-container .sidenav {
+  width: auto;
+}
+
+.sidenav-container .sidenav.left-sidebar {
+  box-shadow: 0 0 38.2px 7.8px rgba(0, 0, 0, 0.27);
+  background-image: linear-gradient(178deg, #353a5f, #1f2235);
+  transition: 0.2s ease-in;
+}
+
+.sidenav-container .sidenav.left-sidebar .sidenav-logo {
+  background-image: linear-gradient(178deg, #353a5f, #1f2235);
+}
+
+.sidenav-container .sidenav.left-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-container .sidenav.left-sidebar ul li:last-child {
+  border-bottom: none !important;
+}
+
+.sidenav-container .sidenav.left-sidebar ul li a {
+  color: #fff;
+  height: 33px;
+}
+
+.sidenav-container .sidenav.left-sidebar ul li a.active {
+  background-color: #1e1e2e;
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+}
+
+.sidenav-container .sidenav.left-sidebar ul li a.active mat-icon {
+  color: #499bdd;
+}
+
+.sidenav-container .mat-sidenav-content {
+  transition: margin-left ease .2s;
+}
+
+.sidenav-container .mat-sidenav-content .navbar-fixed {
+  color: rgba(0, 0, 0, 0.87);
+  position: fixed;
+  z-index: 2;
+}
+
+.sidenav-container .mat-sidenav-content .navbar-fixed .logo-ht {
+  height: 2rem;
+}
+
+.sidenav-container .mat-sidenav-content .custom-wrapper {
+  margin-top: 10%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .sidenav-container .mat-sidenav-content .custom-wrapper {
+    margin-top: 50% !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 426px) {
+  .sidenav-container .mat-sidenav-content .custom-wrapper {
+    margin-top: 30% !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ml-md-6 {
+    margin-left: 4rem !important;
+  }
+  .ml-md-16 {
+    margin-left: 11.4rem !important;
+  }
+}

@@ -1,17 +1,32 @@
 {
   "name": "angular-electron",
-  "version": "0.0.0",
+  "productName": "Angular 8 and Electron 6 Todo App",
+  "description": "A simple Todo app for Windows, Mac and Linux which is created through Electron 6 and Angular 8",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sathishkumar S",
+    "email": "sathishjim@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sathishkumar63/angular-electron-todo-app.git"
+  },
+  "main": "electron/dist/main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-electron": "ng build --prod && tsc --p electron",
+    "start-electron": "electron .",
+    "package-mac": "electron-packager . --overwrite --asar --platform=darwin --arch=x64 --icon=src/assets/icons/mac/icon.icns --prune=true --darwinDarkModeSupport=true",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar --platform=win32 --arch=ia32 --icon=src/favicon.ico --prune=true --version-string.ProductName=\"Angular 8 and Electron 6 Todo App\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar --platform=linux --arch=x64 --icon=src/assets/icons/icon-512x512.png --prune=true"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
     "@angular/compiler": "~8.2.0",
     "@angular/core": "~8.2.0",
@@ -19,29 +34,40 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
-    "rxjs": "~6.4.0",
+    "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.10.2",
+    "@angular/animations": "^8.0.3",
+    "@angular/cdk": "^8.1.1",
+    "@angular/material": "^8.1.1",
+    "@angular/pwa": "^0.802.2",
+    "@angular/service-worker": "~8.2.2",
+    "bootstrap": "^4.3.1",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.802.0",
-    "@angular/cli": "~8.2.0",
+    "@angular-devkit/build-angular": "^0.802.2",
+    "@angular/cli": "^8.2.2",
     "@angular/compiler-cli": "~8.2.0",
     "@angular/language-service": "~8.2.0",
-    "@types/node": "~8.9.4",
-    "@types/jasmine": "~3.3.8",
+    "@types/jasmine": "~3.4.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~12.7.2",
     "codelyzer": "^5.0.0",
+    "electron": "^6.0.2",
+    "electron-packager": "^14.0.4",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma": "~4.2.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.18.0",
     "typescript": "~3.5.3"
   }
 }
